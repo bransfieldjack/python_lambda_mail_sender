@@ -7,10 +7,12 @@ from sendgrid.helpers.mail import Mail
 """
 prep:
 
-pip install sendgrid
-pip install boto3 -t ./
-chmod -R 755 .
-zip -r ../myDeploymentPackage.zip .
+pip install sendgrid -t .   (install evertyhing into current working dir, then zip it for lambda exec)
+Then zip file.
+
+File: lambda_function
+Method_name: lambda_handler
+
 """
 
 def forward_email(event, context):
